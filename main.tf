@@ -170,30 +170,7 @@ resource "aws_instance" "web" {
     Name = var.tags
   }
 }
-#   ebs_block_device {
-#     device_name = "/dev/sdf"
-#     volume_size = 16
 
-#   }
-#   tags = {
-#     Name = var.tags
-#   }
-# }
-
-# resource "aws_volume_attachment" "ebs_att" {
-#   device_name = "/dev/sda1"
-#   volume_id   = aws_ebs_volume.storagedisk.id
-#   instance_id = aws_instance.web.id
-# }
-
-# resource "aws_ebs_volume" "storagedisk" {
-#   availability_zone = var.availability_zone
-#   size              = 16
-
-#   tags = {
-#     Name = var.tags
-#   }
-# }
 #step 1: Create VPC
 #step 2: Create internet gateway
 #step 3: Create route table
