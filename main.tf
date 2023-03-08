@@ -182,5 +182,15 @@ resource "aws_instance" "web" {
 #step 9: create ubuntu server and install /enable nginx
 ## Step 8 may show error- just rerun the program
 #/home/username/.aws/credentials
+# needs .tfvars tp load the variable values
 
+# instance_type     = "t3a.micro"
+# iam_user          = "iot_user"
+# access_key        = "-----"
+# secret_key        = "-----"
+# region            = "ap-south-1"
+# availability_zone = "ap-south-1a"
+# tags              = "webserver"
+# key_name          = "-----"
+# ami               = "ami-062df10d14676e201"    
 
