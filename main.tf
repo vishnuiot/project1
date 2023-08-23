@@ -3,10 +3,11 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "4.34.0"
+      version = "5.13.1"
     }
   }
 }
+
 
 provider "aws" {
   # Configuration options
@@ -35,7 +36,7 @@ resource "aws_internet_gateway" "gw" {
   }
 }
 
-#Step 3
+# #Step 3
 
 resource "aws_route_table" "main" {
   vpc_id = aws_vpc.main.id
@@ -143,7 +144,7 @@ output "Elastic_ip" {
   value = aws_eip.one.public_ip
 }
 
-#step 9: create ubuntu server and install /enable nginx
+# #step 9: create ubuntu server and install /enable nginx
 
 resource "aws_instance" "web" {
   ami           = var.ami
@@ -185,7 +186,11 @@ resource "aws_instance" "web" {
 # needs .tfvars tp load the variable values
 
 # instance_type     = "t3a.micro"
+<<<<<<< HEAD
+# iam_user          = "-----"
+=======
 # iam_user          = "iot_user"
+>>>>>>> 873dfb22bbb5f8e56c60cc2571ffef6b15b016c4
 # access_key        = "-----"
 # secret_key        = "-----"
 # region            = "ap-south-1"

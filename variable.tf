@@ -4,22 +4,28 @@ variable "instance_type" {
   #default     = "t3a.micro"
 }
 
+variable "iam_user" {
+  type        = string
+  description = "IAM_user"
+
+}
+
 variable "access_key" {
   type        = string
   description = "access_key"
-  #default = "AKIAYVIIU5BYXAUQXEXD"
+  #default = ""
 }
 
 variable "secret_key" {
   type        = string
   description = "secret_key"
-  #default = "/3iTkjRAs/cq68Hx13uJK6K31CKAxK1t2j3x2x8v"
+  #default = ""
 }
 
 variable "region" {
   type        = string
   description = "region"
-  #default = "/3iTkjRAs/cq68Hx13uJK6K31CKAxK1t2j3x2x8v"
+  #default = "ap-south-1"
 }
 
 variable "tags" {
@@ -36,13 +42,13 @@ variable "key_name" {
 variable "availability_zone" {
   type        = string
   description = "availability zone"
-  #default = ""
+  #default = "ap-south-1a"
 }
 
 variable "ami" {
   type        = string
   description = "ami"
-
+#default = "ami-0f5ee92e2d63afc18"
 }
 
 # variable "environment_name" {
