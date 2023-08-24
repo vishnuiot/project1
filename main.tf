@@ -186,11 +186,7 @@ resource "aws_instance" "web" {
 # needs .tfvars tp load the variable values
 
 # instance_type     = "t3a.micro"
-<<<<<<< HEAD
 # iam_user          = "-----"
-=======
-# iam_user          = "iot_user"
->>>>>>> 873dfb22bbb5f8e56c60cc2571ffef6b15b016c4
 # access_key        = "-----"
 # secret_key        = "-----"
 # region            = "ap-south-1"
